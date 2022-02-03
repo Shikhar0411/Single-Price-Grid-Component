@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Inter&family=Karla&family=Kumbh+Sans:wght@500&family=Lexend+Deca:wght@200;400&family=Outfit&family=Red+Hat+Display:wght@600&family=Roboto+Mono:ital@1&display=swap');
+
+:root{
+    /*Font Size*/
+    font-size: 16px;
+
+    /*Font Colors*/
+    --primary-color1: hsl(179, 62%, 43%);
+    --primary-color2: hsl(71, 73%, 54%);
+    --neutral-color1: hsl(204, 43%, 93%);
+    --neutral-color2: hsl(218, 22%, 67%);
+
+    /*Font Family*/
+    --font-family: 'Karla', sans-serif;
+
+    /*Font Weights*/
+    --font-weight1: 400;
+    --font-weight2: 700;
+
+    --gen-padding: 2rem;
+}
+
+body{
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+    background: var(--neutral-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--neutral-color1);
+    max-width: 70%;
+    margin: 2rem;
+}
+
+@media (min-width: 475px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--neutral-color1);
+        max-width: 42%;
+        margin: 4rem;
+    }
+}
+
+.segment1{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.content{
+    padding: 0.5rem 2rem;
+}
+
+.big-header{
+    color: var(--primary-color1);
+    font-size: 1.6rem;
+    font-weight: var(--font-weight2);
+}
+
+.segment2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+}
+
+@media (min-width: 475px){
+    .segment2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+}
+
+.left-segment{
+    background: var(--primary-color1);
+    padding: 0.5rem 2rem;
+    margin: 0rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.big-text{
+    font-size: 2rem;
+    color: white;
+}
+
+.small-text{
+    color: white;
+}
+
+.btn{
+    background: var(--primary-color2);
+    width: 30%;
+    color: var(--neutral-color1);
+    font-size: 1.2rem;
+    padding: 0.6rem 3rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: var(--font-weight2);
+}
+
+.right-segment{
+    background: hsl(179, 62%, 50%);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+    margin: 0rem;
+}
+
+.header{
+    color: var(--neutral-color1);
+    font-weight: var(--font-weight2);
+}
+
+
+.list{
+    line-height:0.3rem;
+    color: rgb(231, 226, 226);
+}
+
+.text{
+    color: rgb(204, 198, 198);
+    font-weight: var(--font-weight1);
+}
+
+.yellow-text{
+    color: var(--primary-color2);
+}
